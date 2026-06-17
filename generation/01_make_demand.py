@@ -1,14 +1,12 @@
 # -*- coding: utf-8 -*-
-"""Option A, step 1 — generate a FRESH, independently-designed delivery demand
-over Bogota whose statistical character matches the descriptor (821 hubs,
-6,911 drones, hub sizes 2-40 median 8, OD distance median ~1.5 km, right-skewed,
-hubs concentrated on a central north-south corridor thinning to the periphery).
+"""Generate the Bogota delivery demand for the dataset: 821 origin hubs and
+6,911 drone origin-destination pairs. Hub locations, hub sizes (2-40 drones,
+median 8) and destinations (origin-destination distance median ~1.5 km,
+right-skewed) are sampled from documented generative models with a fixed seed,
+so the demand is fully reproducible. Hubs concentrate on a central north-south
+corridor and thin towards the periphery.
 
-Nothing here is taken from the original logs: hubs, hub sizes and destinations
-are all sampled from documented generative models with a fixed seed, so the
-resulting demand is genuinely our own design and fully reproducible.
-
-Outputs (regen/demand/):
+Outputs (demand/):
     hubs.csv    hub_id, lat, lon, n_drones                       (821 rows)
     demand.csv  drone_id, hub_id, orig_lat, orig_lon, dest_lat, dest_lon, od_distance_m  (6911 rows)
 """
@@ -99,7 +97,7 @@ demand = pd.DataFrame({'drone_id': np.arange(N_DRONES), 'hub_id': hub_of_drone,
                        'od_distance_m': od.round(2)})
 demand.to_csv(os.path.join(OUT, 'demand.csv'), index=False)
 
-# --- verification against the descriptor's stated statistics ----------------------
+# --- summary of the generated demand ----------------------
 print('seed:', SEED)
 print('hubs: %d  drones: %d (sum of hub sizes = %d)' % (len(hubs), len(demand), sizes.sum()))
 print('hub sizes: min=%d median=%d max=%d mean=%.2f' % (sizes.min(), int(np.median(sizes)), sizes.max(), sizes.mean()))
@@ -108,5 +106,4 @@ print('OD distance m : median=%.1f mean=%.1f p5=%.1f p95=%.1f max=%.1f'
       % (od.mean() and np.median(od), od.mean(), np.percentile(od, 5), np.percentile(od, 95), od.max()))
 print('orig bounds lat [%.4f, %.4f] lon [%.4f, %.4f]'
       % (orig_lat.min(), orig_lat.max(), orig_lon.min(), orig_lon.max()))
-print('TARGET (original): hubs 821, drones 6911, sizes 2-40 med 8, OD med 1482 mean 1592 p95 3262 max 4968')
 print('wrote', os.path.join(OUT, 'hubs.csv'), 'and demand.csv')

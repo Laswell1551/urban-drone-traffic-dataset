@@ -77,7 +77,7 @@ urban-drone-traffic-dataset/
 
 The full release is hosted at:
 
-> **`<REPOSITORY URL / DOI — e.g. https://doi.org/10.5281/zenodo.XXXXXXXX>`**
+> **https://doi.org/10.5281/zenodo.20730170**
 
 with a flat structure: `states/` (30 per-run Parquet files), `flights.csv`
 (207,330 rows), `hubs.csv` (821 hubs), `scenarios.csv` (30-run manifest),
@@ -146,11 +146,11 @@ python analysis/make_tables.py
 Please cite the Data Descriptor and this dataset:
 
 ```
-<Author list>. A dataset of simulated urban drone traffic trajectories under
-varying wind and operating conditions. Scientific Data <vol>, <article> (<year>).
-https://doi.org/<paper-doi>
+Lin, J., Yan, S., Zhang, S. & Peng, M. A dataset of simulated urban drone traffic
+trajectories under varying wind and operating conditions. Scientific Data (in review).
 
-<Author list>. <Dataset title>. <Repository> https://doi.org/<dataset-doi> (<year>).
+Lin, J., Yan, S., Zhang, S. & Peng, M. Urban drone traffic trajectories under varying
+wind and operating conditions. Zenodo https://doi.org/10.5281/zenodo.20730170 (2026).
 ```
 
 See [`CITATION.cff`](CITATION.cff).

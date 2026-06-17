@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Option A, step 2 -- fast-time point-mass multirotor (DJI Matrice 600) simulator.
+"""Fast-time point-mass multirotor (DJI Matrice 600) simulator.
 
 Flies the fresh demand (regen/demand/demand.csv) through the 30-run OFAT sweep and
 writes per-second state logs in the SAME plain-text column format as the original
