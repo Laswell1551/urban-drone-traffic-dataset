@@ -59,7 +59,7 @@ def fig01():
     fig, ax = plt.subplots(figsize=(7.4, 2.4)); ax.axis('off')
     ax.set_xlim(0, 1); ax.set_ylim(0, 1)
     steps = [('Scenario\ndesign', 'OFAT sweep of speed,\naltitude and wind\naround a baseline', C['sand']),
-             ('BlueSky\nsimulation', 'M600 model; 6,911\ndrones; full state\nlogged at 1 Hz', '#dce6f0'),
+             ('Fast-time\nsimulation', 'M600 point-mass model;\n6,911 drones; full\nstate logged at 1 Hz', '#dce6f0'),
              ('Post-\nprocessing', 'clean constant fields,\nenrich parameters,\nParquet, derive tables', '#e6f0e6'),
              ('Analysis-ready\nrelease', 'states + flights, hubs,\nscenarios, dictionary,\nbuild script', '#f0e6ef')]
     w, h, y = 0.20, 0.58, 0.22
