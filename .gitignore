@@ -1,0 +1,21 @@
+# Full dataset is hosted in a formal repository, not in git.
+# Download it into processed/ to run the analysis scripts.
+processed/*
+!processed/.gitkeep
+!processed/README.md
+
+# Generated artifacts (regenerable from the released code)
+generation/demand/
+generation/logs/
+analysis/out/
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db

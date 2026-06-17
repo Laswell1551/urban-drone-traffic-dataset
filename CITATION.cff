@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite the Data Descriptor and the original source data (see README)."
+title: "Urban drone traffic trajectories under varying wind and operating conditions"
+type: dataset
+authors:
+  - family-names: Lin
+    given-names: Jiaqi
+  - family-names: Yan
+    given-names: Shi
+  - family-names: Zhang
+    given-names: Shenhu
+  - family-names: Wang
+    given-names: Yong
+  - family-names: Sun
+    given-names: Yifu
+  - family-names: Xu
+    given-names: Chengwei
+  - family-names: Peng
+    given-names: Mugen
+# ⚠️ Fill in once the deposit DOI is issued:
+# doi: 10.5281/zenodo.XXXXXXXX
+# version: "1.0.0"
+# date-released: "YYYY-MM-DD"
+url: "<repository or DOI URL>"
+keywords:
+  - urban air mobility
+  - drone traffic management
+  - trajectory prediction
+  - conflict detection
+  - BlueSky simulator
+references:
+  - type: article
+    title: "A dataset of simulated urban drone traffic trajectories under varying wind and operating conditions"
+    authors:
+      - family-names: Lin
+        given-names: Jiaqi
+      - family-names: Yan
+        given-names: Shi
+    journal: "Scientific Data"
+    # doi: 10.1038/sXXXXX-XXX-XXXXX-X
