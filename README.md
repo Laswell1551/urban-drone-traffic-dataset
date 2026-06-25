@@ -146,11 +146,13 @@ python analysis/make_tables.py
 Please cite the Data Descriptor and this dataset:
 
 ```
-Lin, J., Yan, S., Zhang, S. & Peng, M. A dataset of simulated urban drone traffic
-trajectories under varying wind and operating conditions. Scientific Data (in review).
+Lin, J., Li, X., Zhang, S., Sun, Y., Gu, J. & Lin, X. A dataset of simulated urban drone
+traffic trajectories under varying wind and operating conditions. Scientific Data
+(in review).
 
-Lin, J., Yan, S., Zhang, S. & Peng, M. Urban drone traffic trajectories under varying
-wind and operating conditions. Zenodo https://doi.org/10.5281/zenodo.20730170 (2026).
+Lin, J., Li, X., Zhang, S., Sun, Y., Gu, J. & Lin, X. A dataset of simulated urban drone
+traffic trajectories under varying wind and operating conditions. Zenodo
+https://doi.org/10.5281/zenodo.20730170 (2026).
 ```
 
 See [`CITATION.cff`](CITATION.cff).
